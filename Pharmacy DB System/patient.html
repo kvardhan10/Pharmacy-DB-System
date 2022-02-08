@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATIENT</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>WELCOME TO PATIENT REGISTRATION</h2>
+        <br>
+        <p>Enter your details</p>
+        <br>
+
+        <form action="php/patient.php" method="post">
+            <input type="text" name="PatientName" id="PatientName" placeholder="Enter the Patient Name" required>
+            <input type="date" name="PatientDOB" id="PatientDOB" placeholder="Enter your date of birth" required>
+            <label for="PatientGender">Gender</label>
+            <select id="PatientGender" name="PatientGender" required>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="O">Others</option>
+            </select>
+            <label for="HospitalID">Choose your Hospital</label>
+            <select id="HospitalID" name="HospitalID" required>
+            <option value="11">SDM, Dharwad</option>
+            <option value="12">Apollo, Bangalore</option>
+            <option value="13">KIMS, Hubli</option>
+            </select>
+            <label for="DoctorID">Choose your Doctor</label>
+            <select id="DoctorID" name="DoctorID" required>
+            <option value="1">Dr. Satish</option>
+            <option value="2">Dr. Shankar</option>
+            <option value="3">Dr. Lata</option>
+            <option value="4">Dr. Shekar</option>
+            <option value="5">Dr. Rahul</option>
+            <option value="6">Dr. Swathi</option>
+            </select>
+            <input type="submit" name="submit" value="SUBMIT" class="submit">
+            <input type="reset" name="reset" value="RESET" class="reset">
+        </form>
+    </div>
+    <script src="index.js"></script>
+    </body>
+</html>

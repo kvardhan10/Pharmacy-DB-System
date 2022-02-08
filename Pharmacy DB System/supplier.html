@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPPLIERS</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>WELCOME TO SUPPLIER REGISTRATION</h2>
+        <br>
+        <p>Enter your details</p>
+        <br>
+
+        <form action="php/supplier.php" method="post">
+            <!-- <label for="SupplierName">Choose your Supplier</label>
+            <select id="SupplierName" name="SupplierName" required>
+            <option value="KK">KK Pharma and Sons</option>
+            <option value="KV">KV DePharma and Brothers</option>
+            <option value="AB">AB UltraPharma and Sisters</option>
+            </select> -->
+            <input type="text" name="SupplierName" id="SupplierName" placeholder="Enter your agency name" required>
+            <input type="number" name="SupplierSP" id="SupplierSP" placeholder="Enter supplier selling price" required>
+            <input type="submit" name="submit" value="SUBMIT" class="submit">
+            <input type="reset" name="reset" value="RESET" class="reset">
+        </form>
+    </div>
+    <script src="index.js"></script>
+    </body>
+</html>

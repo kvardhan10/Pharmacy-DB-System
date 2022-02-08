@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDICINE</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>WELCOME TO MEDICINE FILLING</h2>
+        <br>
+        <p>Enter your details</p>
+        <br>
+
+        <form action="php/medicine.php" method="post">
+          <label for="PatientID">Who's the medicine for?</label>
+          <select id="PatientID" name="PatientID" required>
+          <option value="101">Karan</option>
+          <option value="102">Aditya</option>
+          <option value="103">Guruprasad</option>
+          <option value="104">Rohit</option>
+            <input type="text" name="MedicineName" id="MedicineName" placeholder="Enter the Medicine Name" required>
+            <label for="MedicineMFG">Manufacture Date:</label>
+            <input type="date" name="MedicineMFG" id="MedicineMFG" placeholder="Enter medicine manufacture date" required>
+            <label for="MedicineEXP">Expiry Date:</label>
+            <input type="date" name="MedicineEXP" id="MedicineEXP" placeholder="Enter medicine expiry date" required>
+            <input type="number" name="MedicinePrice" id="MedicinePrice" placeholder="Enter medicine price" required>
+            <label for="SupplierID">Supplier</label>
+            <select id="SupplierID" name="SupplierID" required>
+            <option value="10001">KK Pharma and Sons</option>
+            <option value="10002">KV Depharma and Brothers</option>
+            <option value="10003">AB UltraPharma and Sisters</option>
+            <input type="submit" name="submit" value="SUBMIT" class="submit">
+            <input type="reset" name="reset" value="RESET" class="reset">
+        </form>
+    </div>
+    <script src="index.js"></script>
+    </body>
+</html>

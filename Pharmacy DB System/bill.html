@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILLING</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>WELCOME TO BILLING COUNTER</h2>
+        <br>
+        <p>Enter your details</p>
+        <br>
+
+        <form action="php/bill.php" method="post">
+          <label for="PatientID">Bill Payer</label>
+          <select id="PatientID" name="PatientID" required>
+          <option value="101">Karan</option>
+          <option value="102">Aditya</option>
+          <option value="103">Guruprasad</option>
+          <option value="104">Rohit</option>
+        </select>
+        <label for="DoctorID">Bill Issuer</label>
+        <select id="DoctorID" name="DoctorID" required>
+        <option value="1">Dr. Satish</option>
+        <option value="2">Dr. Shankar</option>
+        <option value="3">Dr. Lata</option>
+        <option value="4">Dr. Shekar</option>
+        <option value="5">Dr. Rahul</option>
+        <option value="6">Dr. Swathi</option>
+        </select>
+            <input type="text" name="TotalPrice" id="TotalPrice" placeholder="Total Billing Price in ₹." required>
+            <label for="PurchaseDate">Purchase Date</label>
+            <input type="date" name="PurchaseDate" id="PurchaseDate" placeholder="Enter the purchase date" required>
+            <input type="submit" name="submit" value="SUBMIT" class="submit">
+            <input type="reset" name="reset" value="RESET" class="reset">
+        </form>
+    </div>
+    <script src="index.js"></script>
+    </body>
+</html>

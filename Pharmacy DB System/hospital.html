@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOSPITAL</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>WELCOME TO HOSPITAL REGISTRATION</h2>
+        <br>
+        <p>Enter your details</p>
+        <br>
+
+        <form action="php/hospital.php" method="post">
+            <input type="text" name="HospitalName" id="HospitalName" placeholder="Enter the Hospital Name" required>
+            <input type="number" name="HospitalNumber" id="HospitalNumber" placeholder="Enter hospital phone number" required>
+            <textarea name="HospitalLocation" id="HospitalLocation" cols="13" rows="5" placeholder="Enter hospital location details" required></textarea>
+            <input type="number" name="HospitalPincode" id="HospitalPincode" placeholder="Enter hospital pincode" maxlength=6 required>
+            <input type="submit" name="submit" value="SUBMIT" class="submit">
+            <input type="reset" name="reset" value="RESET" class="reset">
+        </form>
+    </div>
+    <script src="index.js"></script>
+    </body>
+</html>

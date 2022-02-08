@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCTOR</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>WELCOME TO DOCTOR REGISTRATION</h2>
+        <br>
+        <p>Enter your details</p>
+        <br>
+
+        <form action="php/doctor.php" method="post">
+            <input type="text" name="DoctorName" id="DoctorName" placeholder="Enter the Doctor Name" required>
+            <label for="HospitalID">Choose hospital</label>
+            <select id="HospitalID" name="HospitalID">
+            <option value="11">SDM</option>
+            <option value="12">Apollo</option>
+            <option value="13">KIMS</option>
+            <option value="14">Medi+</option>
+            </select>
+            <input type="date" name="DoctorDOB" id="DoctorDOB" placeholder="Enter your date of birth">
+            <label for="DoctorGender">Gender</label>
+            <select id="DoctorGender" name="DoctorGender">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="others">Others</option>
+            </select>
+            <input type="submit" name="submit" value="SUBMIT" class="submit">
+            <input type="reset" name="reset" value="RESET" class="reset">
+        </form>
+    </div>
+    <script src="index.js"></script>
+    </body>
+</html>
